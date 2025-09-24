@@ -21,7 +21,7 @@ jobs:
 
     - name: Build and Push Docker image
       run: |
-        docker build -t ghcr.io/sumayyata/hello-app:latest.
+        docker build -t ghcr.io/sumayyata/hello-app:latest .
         docker push ghcr.io/sumayyata/hello-app:latest
 
     - name: Set up kubectl
